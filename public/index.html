@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book API</title>
+</head>
+
+<body>
+    <h1>Book API</h1>
+    <hr/>
+    <h2>System</h2>
+    <p>Programming Language: Node.js
+        <br/>Database: MongoDB
+        <br/>Server: Heroku
+        <br/>Source Control: Git</p>
+    <hr/>
+    <h2>API Information</h2>
+    <h3>Model</h3>
+    <p>title: String
+        <br/>author: String
+        <br/>genre: String
+        <br/>read: Boolean, default: false
+        <br/>timestamp: Number
+        <br/>history: Arry Object</p>
+    <h3>Requests</h3>
+    <p>Method: GET
+        <br/>Endpoint: /books
+        <br/>Comment: finds all books</p>
+    <p>Method: GET
+        <br/>Endpoint: /books/:bookId
+        <br/>Comment: find book by id</p>
+    <p>Method: GET
+        <br/>Endpoint: /books/:bookId?timestamp=0000000000
+        <br/>Comment: find book by id and get book information from timestamp</p>
+    <p>Method: POST
+        <br/>Endpoint: /books
+        <br/>Header: Content-Type: application/json
+        <br/>Comment: creates a new book</p>
+    <p>Method: PUT
+        <br/>Endpoint: /books/:
+        <br/>Header: Content-Type: application/json
+        <br/>Comment: update book by id</p>
+    <p>Method: PATCH
+        <br/>Endpoint: /books/:bookId
+        <br/>Header: Content-Type: application/json
+        <br/>Comment: update book by id (for partial modifications)</p>
+    <p>Method: DELETE
+        <br/>Endpoint: /books/:bookId
+        <br/>Comment: deletes book by id</p>
+    <hr/>
+    <p>powered by : Jumpon Dumkham (Mern)</p>
+</body>
+
+</html>
